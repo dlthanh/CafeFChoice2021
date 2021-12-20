@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CafeF Choice 2021: 11 điểm nhấn của kinh tế Việt Nam</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/slimscroll.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            new AOS.init();
+
+            $('.swiper-button-prev, .swiper-button-next, .swiper-pagination').hide()
+
+            var swiper = new Swiper('.swiper-container', {
+                speed: 300,
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true
+                },
+                mousewheel: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
+                on: {
+                    slideChangeTransitionStart: function() {
+                        if(swiper.activeIndex > swiper.previousIndex) {
+                            $('.swiper-slide').eq(swiper.activeIndex).find('.animate').addClass('aos-init').addClass('aos-animate')
+                        }
+                        if (swiper.activeIndex == 0) {
+                            $('.swiper-button-prev, .swiper-button-next, .swiper-pagination').hide()
+                        } else {
+                            $('.swiper-button-prev, .swiper-button-next, .swiper-pagination').fadeIn(300)
+                        }
+                    },
+                    slideChangeTransitionEnd: function() {
+                        if(swiper.activeIndex < swiper.previousIndex) {
+                            $('.swiper-slide').eq(swiper.previousIndex).find('.animate').removeClass('aos-init').removeClass('aos-animate')
+                        }
+                    }
+                }
+            })
+            swiper.allowTouchMove = false;
+
+            $('.swiper-slide').not(':eq(0)').find('.animate').removeClass('aos-init').removeClass('aos-animate');
+
+            $('.slimScroll').slimScroll({
+                height: '100%',
+                railVisible: true,
+                alwaysVisible: true,
+                size: '4px'
+            });
+
+            $('.emag-content').hover(function() {
+                swiper.mousewheel.disable();
+            }, function() {
+                swiper.mousewheel.enable();
+            })
+
+            $(".emag-cover-arrow").click(function() {
+                swiper.slideTo(1, 300)
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="emag-wrapper">
+        <div class="emag-header"></div>
+
+        <div class="emag-background"></div>
+
+        <div class="swiper-button-prev">
+            <img src="images/arrow-left.png" alt="">
+        </div>
+
+        <div class="swiper-button-next">
+            <img src="images/arrow-right.png" alt="">
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="emag-cover">
+                        <div class="emag-main">
+                            <div class="tag">
+                                <img src="images/tag.png" alt="">
+                            </div>
+        
+                            <div class="emag-cover-column">
+                                <img src="images/title.png" alt=""  class="emag-title">
+        
+                                <p class="emag-sapo">
+                                    2021 là năm rất đặc biệt với nhiều biến động của nền kinh tế chịu tác động của đại dịch Covid-19. Dù vậy, chiến lược vacince đúng đắn đã đưa Việt Nam về bình thường mới vào cuối năm, thép, chứng khoán, ngân hàng gặt hái thành công lớn, startup do người Việt sáng lập nổi bật trên thị trường game thế giới… 
+                                </p>
+                            </div>
+        
+                            <div class="emag-cover-column">
+                                <img src="images/cover.png" alt="" class="emag-cover-bg">
+                            </div>
+        
+                            <img src="images/cover-arrow.png" alt="" class="emag-cover-arrow">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="emag-main">
+                        <div class="emag-body">
+                            <div class="emag-body-wrapper">
+                                <img src="images/slide-1.png" alt="" class="slide-bg">
+
+                                <div class="emag-content">
+                                    <div class="slimScroll">
+                                        <p>Cách đây chưa tới nửa năm, tờ The Straits Times (Singapore) đưa ra dự báo, Việt
+                                            Nam phải mất hơn 10 năm nữa mới có thể tiêm được vaccine Covid-19 cho 75%
+                                            dân số, gần như đứng chót bảng ở Đông Nam Á.</p>
+                                        <p>Đến nay, vượt xa dự đoán của The Straits Times, Việt Nam là một trong 20 nước
+                                            trên thế giới có số liều vaccine tiêm chủng nhiều nhất. Tỷ lệ tiêm cũng nhanh
+                                            chóng đạt được những con số đáng ghi nhận. Đó là kết quả của những nỗ lực
+                                            không ngừng nghỉ của Chính phủ, của ngành y tế và cả người dân, cộng đồng
+                                            doanh nghiệp.</p>
+                                        <p>Hiện thân của chiến lược vaccine không chỉ là Quỹ vaccine – huy động được tới
+                                            8.800 tỷ đồng, mà còn là hoạt động ngoại giao vaccine, là hoạt động nghiên cứu
+                                            sản xuất vaccine, là chiến dịch tiêm chủng thần tốc, lớn nhất lịch sử… với những
+                                            kết quả vô cùng ấn tượng.</p>
+                                        <p>“Một là phải nhập khẩu được vaccine nhiều nhất, sớm nhất có thể. Khó khăn là
+                                            khan hiếm trên toàn cầu, nhưng không vì khó khăn đó mà chúng ta ngồi im. Không
+                                            được! Hiện nay đang tiến hành ngoại giao vaccine” – Thủ tướng nói tại Hội nghị
+                                            trực tuyến của Chính phủ sáng ngày 8/8/2021, yêu cầu các bộ trưởng, đặc biệt là
+                                            Bộ trưởng Ngoại giao tận dụng mọi kênh để tiếp cận nguồn vaccine.</p>
+                                        <p>Công tác ngoại giao đã giúp Việt Nam tiếp nhận gần 169 triệu liều vaccine, trong
+                                            đó mua từ ngân sách nhà nước hơn 80 triệu liều, từ các nguồn viện trợ/tài trợ là
+                                            hơn 88 triệu liều, vượt mục tiêu 150 triệu liều Chính phủ đề ra. Đặc biệt trong đó,
+                                            hơn 1 triệu liều vaccine Abdala của Cuba đã được chuyển về Việt Nam bằng…
+                                            chuyên cơ của Chủ tịch nước Nguyễn Xuân Phúc.</p>
+                                        <p>Thứ hai là nghiên cứu và chuyển giao công nghệ sản xuất trong nước. Đáng mừng
+                                            là doanh nghiệp Việt Nam vừa tự nghiên cứu (Nanogen), vừa ký được các hợp
+                                            đồng chuyển giao công nghệ sản xuất vaccine ở trình độ cao (Vingroup, Sovico và
+                                            T&amp;T). Hoạt động sản xuất vaccine đã có đường ra và có đầu ra.</p>
+                                        <p>Và yếu tố quan trọng thứ ba trong chiến lược là tiêm vaccine. Với nỗ lực đẩy
+                                            nhanh tốc độ tiêm, đến hết ngày 16/12, Việt Nam tiêm được hơn 135 triệu liều, đạt
+                                            88% số vaccine phân bổ trong 103 đợt. 77% dân số trưởng thành cả nước được
+                                            tiêm mũi 1, 60% dân số được tiêm mũi 2. Tỷ lệ bao phủ ít nhất một liều vaccine
+                                            của Việt Nam/dân số xếp thứ 4 trong khu vực (sau Singapore, Campuchia, Brunei).
+                                            Trung bình mỗi ngày cả nước tiêm 1-1,5 triệu liều vaccine, tốc độ tiêm trong tháng
+                                            11 đứng thứ 3 thế giới, chỉ sau Trung Quốc và Ấn Độ.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="emag-main">
+                        <div class="emag-body">
+                            <div class="emag-body-wrapper">
+                                <img src="images/slide-2.png" alt="" class="slide-bg">
+
+                                <div class="emag-content">
+                                    <div class="slimScroll">
+                                        <p>2021 là một năm khó quên. Khi tất cả chúng
+                                            ta một lần nữa phải đương đầu với những
+                                            khó khăn, thách thức từ đại dịch Covid-19.
+                                            Đây cũng là năm, các doanh nghiệp lần nữa
+                                            để lại dấu ấn mạnh mẽ trong các hoạt động
+                                            tài trợ phòng, chống dịch Covid-19 tại Việt
+                                            Nam. Là hai trong số những doanh nghiệp tiên phong, tập đoàn Vingroup và Vạn Thịnh
+                                            Phát ghi dấu bằng những con số, hoạt động
+                                            ấn tượng.</p>
+
+                                        <p>Theo số liệu tới tháng 6/2021, tập đoàn
+                                            Vingroup đóng góp với tổng trị giá hơn
+                                            2.287 tỷ đồng, gồm: Tài trợ 4 triệu liều
+                                            vaccine, trị giá gần 500 tỷ đồng; hỗ trợ khẩn
+                                            cấp hai tỉnh Bắc Giang và Bắc Ninh trang
+                                            thiết bị y tế giá trị khoảng hơn 30 tỷ đồng;
+                                            tài trợ 20 tỷ đồng để nghiên cứu thử nghiệm
+                                            lâm sàng vaccine phòng Covid-19 “Made in
+                                            Vietnam” COVIVAC, tài trợ cho 3 dự án
+                                            nghiên cứu ứng phó nhanh với dịch Covid-
+                                            19; tri ân các bác sĩ tuyến đầu chống dịch,
+                                            sản xuất và trao tặng hàng ngàn máy thở cho
+                                            Bộ Y tế và các nước bạn; tặng Bộ Y tế 30
+                                            máy xét nghiệm Covid-19 qua hơi thở và vật
+                                            tư tiêu hao phục vụ cho 2 triệu mẫu test giá
+                                            trị hơn 460 tỷ đồng (tương đương 20 triệu
+                                            USD).</p>
+
+                                        <p>Tập đoàn Vạn Thịnh Phát cũng đã tài trợ
+                                            1.450 tỷ đồng ủng hộ quỹ vaccine vào cuối
+                                            tháng 5/2021 và kêu gọi các doanh nghiệp
+                                            khác đóng góp gần 600 tỷ đồng tiền mặt.
+                                            Doanh nghiệp này cũng hỗ trợ cho công tác
+                                            phòng, chống dịch thông qua các hoạt động
+                                            thiết thực như trao tặng trang thiết bị vật tư
+                                            y tế, thực phẩm tiếp sức cho lực lượng tuyến
+                                            đầu phòng, chống dịch Covid-19. Những
+                                            người hùng thầm lặng trên “hai tuyến đầu”
+                                            Công ty Cổ phần Bảo trợ, Tập đoàn Vạn
+                                            Thịnh Phát hỗ trợ lực lượng tuyến đầu
+                                            chống dịch. Đó là chưa kể, ngay từ tháng
+                                            2/2020, Tập đoàn này đã nghiên cứu, tìm
+                                            cách để có được 2.000 máy thở MV20 tiêu
+                                            chuẩn Nhật Bản hỗ trợ cho việc điều trị các
+                                            bệnh nhân Covid-19 chỉ sau 5 tháng.</p>
+
+                                        <p>Khi TP. HCM vận động các doanh nghiệp
+                                            cùng tham gia, chung tay xây dựng nhiều Bệnh viện Dã chiến (BVDC), không sử
+                                            dụng nguồn kinh phí của Nhà nước, Tập
+                                            đoàn Vạn Thịnh Phát tài trợ BVDC số 5 với
+                                            quy mô 1.000 giường bệnh trên cơ sở cải tạo
+                                            từ Trung tâm thương mại The Garden mall.
+                                            BVDC số 5 đã được đưa vào sử dụng từ
+                                            ngày 20/7/2021. Hai BVDC khác là BV nằm
+                                            trên đường Đào Trí (Quận 7) và BVDC 9AB
+                                            (xã Bình Hưng, huyện Bình Chánh) với tổng
+                                            quy mô giường bệnh lên tới 7.000 giường
+                                            cũng được tập đoàn này đầu tư, thi công và
+                                            bàn giao vào đầu tháng 8/2021. Vạn Thịnh
+                                            Phát cũng chính là doanh nghiệp tài trợ 8
+                                            triệu liều vaccine Verocell, được phân bố
+                                            cho 25 tỉnh thành vào tháng 9/2021.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="emag-main">
+                        <div class="emag-body">
+                            <div class="emag-body-wrapper">
+                                <img src="images/slide-3.png" alt="" class="slide-bg">
+
+                                <div class="emag-content">
+                                    <div class="slimScroll">
+                                        <p>Năm 2021, ngành thép đã có nửa năm thăng hoa và nửa năm bị “thất sủng”, nhưng nếu chọn
+                                            tỷ phú của năm thì không ai khác xứng đáng hơn Chủ tịch Tập đoàn Hoà Phát Trần Đình
+                                            Long. Tại thời điểm 6/12, giá trị tài sản của ông Long theo dữ liệu của Forbes đạt 3,2 tỷ
+                                            USD, xếp hạng 1.444 người giàu nhất thế giới. Đã từng có thời điểm, cổ phiếu HPG tăng
+                                            92% so với cuối năm trước, tuy nhiên dữ liệu tại thời điểm 7/12, giá cổ phiếu HPG tăng
+                                            53,6% so với cuối năm ngoái.</p>
+                                        <p>Sau khi dự án Hoà Phát Dung Quất giai đoạn 1 đi vào vận hành ổn định, năm nay, lần đầu
+                                            tiên trong lịch sử sản lượng bán hàng của Hoà Phát đã vượt 8 triệu tấn, tăng 33% cùng kỳ
+                                            năm trước, trong đó thép cuộn cán nóng đạt 3 triệu tấn.</p>
+                                        <p>Mặc dù thị trường thép xây dựng trong nước bị ảnh hưởng bởi dịch Covid và thời gian giãn
+                                            cách xã hội kéo dài tại các tỉnh phía Nam, tuy nhiên năm nay cũng là năm đầu tiên sản lượng
+                                            xuất khẩu của Hoà Phát vượt 1 triệu tấn, gấp đôi cùng kỳ năm trước. Tôn mạ cũng ghi nhận
+                                            sản lượng xuất khẩu tăng mạnh so với cùng kỳ 2020.</p>
+                                        <p>Điều này được phản ánh tại kết quả kinh doanh của Hoà Phát với kỳ vọng gần 150.000 tỷ
+                                            doanh thu và 35.000 tỷ lợi nhuận sau thuế năm 2021, gấp 2,7 lần thực hiện 2020.</p>
+                                        <p>Ngoài thép, năm 2021 ông Trần Đình Long tập trung mở rộng mảng bất động sản, trong đó
+                                            ngoài bất động sản khu công nghiệp tại Phố Nối (Hưng Yên) được mở rộng diện tích thêm 92
+                                            ha thành 686 ha, Hoà Phát đẩy mạnh các dự án nhà ở và bất động sản nghỉ dưỡng. Ông Long
+                                            đã ký hợp tác đầu tư với Cần Thơ, Nha Trang để rót vốn vào thị trường bất động sản đầy tiềm
+                                            năng tại đây.</p>
+                                        <p>Hòa Phát cũng đẩy mạnh triển khai dự án sản xuất vỏ container tại Bà Rịa -Vũng Tàu công
+                                            suất khoảng 200.000 TEU, dự kiến chạy thử cho ra sản phẩm vào quý III/2022 và đẩy mạnh
+                                            sản phẩm điện máy.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="emag-main">
+                        <div class="emag-body">
+                            <div class="emag-body-wrapper">
+                                <img src="images/slide-4.png" alt="" class="slide-bg">
+
+                                <div class="emag-content">
+                                    <div class="slimScroll">
+                                        <p>Trong năm 2021, VPBank nổi bật với thương vụ bán 49% vốn cổ phần tại FE
+                                            Credit cho SMBC, thu về gần 1,4 tỷ USD. Sau thương vụ này, cùng với lợi
+                                            nhuận để lại các năm trước, VPBank chia cổ tức và cổ phiếu thưởng cho cổ
+                                            đông với tỷ lệ 80% - cao nhất ngành ngân hàng, qua đó tăng vốn điều lệ thêm
+                                            19.750 tỷ đồng lên trên 45.000 tỷ. Với số vốn này, VPBank vượt xa loạt ngân
+                                            hàng như BIDV, Vietcombank, Techcombank và chỉ còn đứng sau VietinBank.
+                                            Vốn chủ sở hữu của nhà băng này đến cuối năm 2021 dự kiến đạt 90.000 tỷ
+                                            đồng.</p>
+                                        <p>Bên cạnh đó, năm 2021 cũng là thời điểm VPBank hoàn thiện chiến lược phân
+                                            khúc khách hàng để chuyển đổi từ một “lending bank” thành một ngân hàng đa
+                                            năng thay vì phụ thuộc lớn vào FE Credit. Các mảng như micro SME, ngân
+                                            hàng số… đã phát huy hiệu quả và tạo ra kết quả rõ rệt.</p>
+                                        <p>VPBank NEO – ngân hàng số toàn năng của nhà băng này, đã tạo sự khác biệt
+                                            lớn cho năm với giải thưởng “Ngân hàng số sáng tạo nhất 2021” của The
+                                            Digital Banker. Theo lãnh đạo ngân hàng này, NEO là một digital banking
+                                            platform thực sự cho cả khách hàng cá nhân và doanh nghiệp, nổi bật với tính
+                                            năng cho vay online – duy nhất có ở VPBank, chứ không đơn thuần là một
+                                            payment platform. Kể từ khi ra mắt, tỷ lệ khách hàng đăng ký mới giao dịch
+                                            thực trên NEO lên tới 87% - mức rất khó tin với một ứng dụng ngân hàng số.</p>
+                                        <p>Tại thời điểm cuối quý 3/2021 – quý cuối cùng Fe Credit còn là công ty con của
+                                            VPBank, tỷ trọng đóng góp vào lợi nhuận hợp nhất của ngân hàng mẹ đã tăng
+                                            lên 93%, FE Credit chỉ còn đóng góp 7% thay vì mức trên dưới 50% những
+                                            năm trước. Điều này thể hiện sự thay đổi ngoạn mục của VPBank trên con
+                                            đường trở thành một ngân hàng đa năng.</p>
+                                        <p>Tính đến cuối tháng 11/2021, VPBank tiếp tục là ngân hàng đứng số 1 toàn hệ
+                                            thống về CIR với tỷ lệ khoảng 23% (mất 23 đồng chi phí để làm ra 100 đồng
+                                            doanh thu, trong khi các ngân hàng khác khoảng 34-35 đồng). Nhà băng này
+                                            cũng đứng số 1 toàn hệ thống về NIM (biên lãi ròng) với 8,5%; số 1 về thẻ tín
+                                            dụng đang lưu hành cũng như giá trị giao dịch. Lợi nhuận 11 tháng đạt trên
+                                            14.000 tỷ đồng.</p>
+                                        <p>Năm 2021, cổ phiếu VPB của VPBank cũng là hiện tượng khi bật tăng mạnh
+                                            gấp hơn 2 lần lên mức cao kỷ lục 74.000 đồng – trở thành cổ phiếu có giá cao
+                                            thứ 2 trong hệ thống chỉ sau VCB của Vietcombank. VPB cũng là cổ phiếu
+                                            ngân hàng có tỷ lệ tăng lớn nhất trên sàn chứng khoán và được McKinsey thống
+                                            kê nằm trong danh sách Top 10 ngân hàng Đông Nam Á tăng giá trị lớn nhất
+                                            trong giai đoạn Covid.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="emag-main">
+                        <div class="emag-body">
+                            <div class="emag-body-wrapper">
+                                <img src="images/slide-5.png" alt="" class="slide-bg">
+
+                                <div class="emag-content">
+                                    <div class="slimScroll">
+                                        <p>Đại dịch COVID-19 đã tạo ra những điều chưa từng có tiền lệ trong cuộc sống mỗi
+                                            người dân, bao gồm thay đổi hành vi từ làm việc, học tập, mua sắm, giải trí…
+                                            Chưa khi nào ngành giáo dục chứng kiến những thay đổi nhanh chóng trong
+                                            chuyển đổi số như vậy, khi các học sinh, sinh viên giờ đây đã quá quen với việc
+                                            học online, cũng như giáo viên đã quen với việc dạy online.</p>
+                                        <p>Thói quen thanh toán của người dân cũng thay đổi rõ rệt. Từng là quốc gia có tỷ lệ
+                                            thanh toán tiền mặt thuộc nhóm cao nhất khu vực, hiện Việt Nam ghi nhận tỷ lệ
+                                            thanh toán không tiền mặt gia tăng, các hình thức thanh toán như ví điện tử, QR
+                                            code… vô cùng được ưa chuộng.</p>
+                                        <p>Một cột mốc quan trọng khác là từ tháng 12/2021, 3 nhà mạng lớn Viettel,
+                                            MobiFone và VNPT đã được phép triển khai thí điểm cung cấp dịch vụ Mobile
+                                            Money trên phạm vi toàn quốc. Hình thức thanh toán qua điện thoại di động
+                                            (Mobile Money) ra đời nhằm lấp đầy những khoảng trống cho hệ thống thanh toán
+                                            không dùng tiền mặt, đáp ứng nhu cầu thanh toán những giao dịch có giá trị nhỏ
+                                            của người dân.</p>
+                                        <p>Không chỉ dừng ở học online, làm việc online, thanh toán online, năm 2021 cũng
+                                            ghi nhận những thay đổi bứt tốc của doanh nghiệp trong công cuộc chuyển đổi số,
+                                            với hầu hết doanh nghiệp coi đây thực sự là cơ hội “sống còn” giai đoạn sắp tới.</p>
+                                        <p>Cùng với đó, 2 dự án quan trọng trong năm đầu tiên Việt Nam thực hiện chiến lược
+                                            chuyển đổi số giai đoạn 2021-2025 phải kể đến, đó là hệ thống cơ sở dữ liệu quốc
+                                            gia về dân cư và sản xuất, cấp căn cước công dân.</p>
+                                        <p>2021 là một năm đáng nhớ khi lần đầu tiên ITU đồng ý với sáng kiến của Việt
+                                            Nam, đổi tên gọi của hội nghị ITU 2021 từ Hội nghị và Triển lãm Viễn thông Thế
+                                            giới, thành Hội nghị và Triển lãm Thế giới số. “Sự đổi tên của sự kiện sau 48 năm
+                                            tồn tại cũng đi theo sự thay đổi nội hàm của sự kiện, đó là sự hội tụ của viễn thông
+                                            với CNTT và công nghệ số”, Bộ trưởng Bộ TT&amp;TT Nguyễn Mạnh Hùng phát biểu
+                                            tại ITU Digital World 2021.</p>
+                                        <p>Mới đây nhất, Thủ tướng Chính phủ đã ký Quyết định 1964/QĐ-TTg phê duyệt
+                                            Danh sách thành viên Ủy ban Quốc gia về chuyển đổi số và lãnh đạo Tổ công tác
+                                            giúp việc Ủy ban Quốc gia về chuyển đổi số. Theo đó, Thủ tướng Chính phủ Phạm
+                                            Minh Chính làm Chủ tịch Ủy ban. Phó Chủ tịch Ủy ban gồm: Phó Thủ tướng
+                                            Chính phủ Vũ Đức Đam (Phó Chủ tịch Thường trực Ủy ban); Bộ trưởng Bộ
+                                            TT&amp;TT Nguyễn Mạnh Hùng.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="emag-main">
+                        <div class="emag-body">
+                            <div class="emag-body-wrapper">
+                                <img src="images/slide-6.png" alt="" class="slide-bg">
+
+                                <div class="emag-content">
+                                    <div class="slimScroll">
+                                        <p>Năm 2021 chứng kiến sự bùng nổ của thị trường chứng khoán Việt Nam khi những
+                                            kỷ lục liên tiếp bị xô đổ. Sự thăng hoa của thị trường đã giúp nhóm công ty chứng
+                                            khoán hưởng lợi lớn và cái tên nổi bật nhất năm qua phải kể tới VNDirect (Mã CK:
+                                            VND).</p>
+                                        <p>9 tháng đầu năm, VNDirect đạt 1.545 tỷ đồng lợi nhuận sau thuế, con số kỷ lục từ
+                                            trước tới nay, cao gấp 3,5 lần cùng kỳ năm trước và hoàn thành vượt 76% kế hoạch
+                                            được ĐHCĐ thông qua đầu năm. Với kết quả tăng trưởng ngoạn mục, VNDirect đã
+                                            điều chỉnh kế hoạch lợi nhuận năm 2021 lên 1.600 tỷ đồng và gần như hoàn thành
+                                            mục tiêu điều chỉnh chỉ sau 9 tháng.</p>
+                                        <p>Dư nợ cho vay của VNDirect lên hơn 11.300 tỷ đồng vào cuối quý 3, tăng 141% so
+                                            với đầu năm và là công ty chứng khoán niêm yết có tăng trưởng dư nợ ấn tượng
+                                            nhất. Để đáp ứng nhu cầu phát triển, VNDirect đã sớm đẩy mạnh tăng vốn và hiện
+                                            đang có kế hoạch tiếp tục tăng vốn lên hơn 12.000 tỷ đồng, qua đó trở thành một
+                                            trong hai công ty chứng khoán có vốn điều lệ lớn nhất thị trường.</p>
+                                        <p>Bà Phạm Minh Hương – Chủ tịch HĐQT VNDirect cho biết: “VNDirect cần gấp
+                                            rút tăng vốn để đón nhận chu kỳ tăng trưởng mới. Việc tăng vốn sẽ giúp cải thiện
+                                            hạn mức kinh doanh và là điều kiện tiên quyết để giữ vững lợi thế quy mô, cạnh
+                                            tranh”.</p>
+                                        <p>VNDirect cũng cho thấy sức hút lớn với khách hàng nhờ sự đầu tư mạnh về dịch
+                                            vụ, công nghệ. Điều này được thấy rõ qua thị phần môi giới VNDirect liên tục cải
+                                            thiện qua các quý và nằm trong top 3 công ty chứng khoán có thị phần môi giới lớn
+                                            nhất thị trường. Đây là kết quả đáng khích lệ trong bối cảnh sự cạnh tranh ngày
+                                            càng gay gắt và hầu hết công ty chứng khoán top đầu đều đánh mất thị phần.</p>
+                                        <p>Trong năm qua, VNDirect cùng với Công ty quản lý quỹ IPA (IPAAM) đã đẩy
+                                            mạnh các sản phẩm đầu tư, tích sản. Đây được coi là hướng đi tiềm năng trong bối
+                                            cảnh ngày càng nhiều nhà đầu tư không chuyên muốn tham gia thị trường chứng
+                                            khoán.</p>
+                                        <p>Không chỉ gây ấn tượng về hoạt động kinh doanh, VNDirect cũng tiên phong
+                                            chuyển giao dịch sang HNX để giúp giảm tải cho hệ thống giao dịch sàn HoSE.</p>
+
+                                        <p>Với những kết quả tích cực trong năm 2021, cổ phiếu VND đã bứt phá hơn 4 lần
+                                            trong năm 2021, đưa vốn hóa VNDirect đạt trên 1 tỷ USD, vươn lên trở thành công
+                                            ty chứng khoán có vốn hóa lớn thứ 2 thị trường.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="emag-main">
+                        <div class="emag-body">
+                            <div class="emag-body-wrapper">
+                                <img src="images/slide-7.png" alt="" class="slide-bg">
+
+                                <div class="emag-content">
+                                    <div class="slimScroll">
+                                        <p>Masterise Group nổi lên như một hiện tượng trên thị trường bất động sản
+                                            năm 2021. Trong năm, Masterise Group liên tục tung ra thị trường hàng loạt
+                                            dự án bất động sản “hàng hiệu” tại các vị trí đắc địa tại Tp.HCM và Hà Nội.</p>
+                                        <p>Tiền thân của Masterise Group là Công ty cổ phần Đầu tư Thảo Điền (Thảo
+                                            Điền Investment) thành lập vào năm 2007. Đến năm 2019, Thảo Điền
+                                            Investment chính thức đổi tên thành Masterise Group và nhanh chóng mở
+                                            rộng thành một hệ sinh thái đa ngành với hàng loạt công ty mang thương
+                                            hiệu Masterise. Sau những thương vụ đình đám, tập đoàn này hiện phát triển
+                                            tới 11 dự án lớn gắn với thương hiệu Masterise Homes.</p>
+                                        <p>Tại TP.HCM, Masterise Group nổi đình đám sau thương vụ thâu tóm dự án
+                                            căn hộ Centennial Sài Gòn thuộc khu phức hợp Sài Gòn – Ba Son từ Alpha
+                                            King và khu phức hợp Spirit of Saigon tại khu đất tứ giác Bến Thành từ tay
+                                            chủ đầu tư Bitexco.</p>
+                                        <p>Ở Hà Nội, Masterise Homes phát triển dự án hạng siêu sang có tên The
+                                            Grand Hanoi trên khu đất vàng rộng hơn 4.000m2 ở số 22 - 24 Hàng Bài của
+                                            Tân Hoàng Minh. Dự án này cũng lập kỷ lục giá nhà tại Việt Nam với mức
+                                            35.000 USD/m2 (gần 800 triệu đồng/m2).</p>
+                                        <p>“Thị trường BĐS hàng hiệu là cuộc chơi tiềm năng với những giá trị bền
+                                            vững cho các bên tham gia, cả chủ đầu tư cũng như người sở hữu. Không chỉ
+                                            củng cố di sản của thương hiệu mà còn hoà quyện vào nền văn hoá, tinh hoa
+                                            của khu vực phát triển”, ông Gibran Bukhari - Giám đốc kinh doanh
+                                            Masterise Homes chia sẻ.</p>
+                                        <p>Ngoài ra, Masterise Homes còn nhận chuyển nhượng 2 khu đất từ Vinhomes
+                                            tại 2 dự án là Vinhomes Grand Park Quận 9 (Tp.HCM) và Vinhomes Ocean
+                                            Park (Hà Nội) để phát triển dự án căn hộ hạng sang tại đây.</p>
+                                        <p>Trong năm qua, Masterise Homes còn có bước đi chiến lược khi ký hợp tác
+                                            với Marriott International, phát triển các dự án bất động sản hàng hiệu đẳng
+                                            cấp quốc tế tại Hà Nội và TP.HCM, gắn liền với các thương hiệu khách sạn
+                                            danh giá như Marriott, JW Marriott và The Ritz-Carlton. Masterise Homes
+                                            cũng là đơn vị tiên phong tung ra giải pháp “Home for Home - Nhà đổi
+                                            nhà”, được xem là chính sách bán nhà vượt trội trên thị trường.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="emag-main">
+                        <div class="emag-body">
+                            <div class="emag-body-wrapper">
+                                <img src="images/slide-8.png" alt="" class="slide-bg">
+
+                                <div class="emag-content">
+                                    <div class="slimScroll">
+                                        <p>Từ cuối quý 4/2020, hệ thống giao dịch của Sở Giao dịch Chứng khoán TP HCM
+                                            (HOSE) thường xuyên diễn ra tình trạng đơ, nghẽn lệnh. Sự cố kéo dài xuyên suốt
+                                            6 tháng đầu năm 2021 gây không ít khó khăn cho hoạt động giao dịch của nhà đầu
+                                            tư.</p>
+                                        <p>Dù rất nỗ lực với những giải pháp như nâng lô giao dịch từ 10 lên 100 đơn vị,
+                                            khoán lệnh cho từng công ty chứng khoán hay tạm chuyển niêm yết doanh nghiệp
+                                            sang sàn HNX nhưng HOSE vẫn không giải quyết triệt để được “căn bệnh” này.</p>
+                                        <p>Tại Hội nghị &quot;Đối thoại Việt Nam 2045&quot;, lãnh đạo Tập đoàn Sovico và FPT đã đề
+                                            xuất Thủ tướng cho phép các doanh nghiệp tư nhân tham gia xử lý vấn đề nghẽn hệ
+                                            thống tại sàn HOSE. Kết quả sau 3 tháng, hệ thống mới do 2 tập đoàn này thực
+                                            hiện đã hoạt động thông suốt, an toàn từ ngày 5/7/2021 với năng lực xử lý gấp 3-5
+                                            lần hệ thống cũ, lên tới 3-5 triệu lệnh/ngày.</p>
+                                        <p>Bà Nguyễn Thị Phương Thảo - Chủ tịch HĐQT Tập đoàn Sovico chia sẻ: &quot;Tính ổn
+                                            định, liên tục của thị trường vốn là yếu tố quan trọng nhất. Sovico mong muốn
+                                            những đóng góp của Tập đoàn có thể giúp thị trường chứng khoán Việt Nam với
+                                            tầm nhìn đến năm 2045 có thể sánh vai với các thị trường lớn như London, New
+                                            York”.</p>
+                                        <p>Nhờ những đóng góp của Sovico và FPT, thị trường chứng khoán Việt Nam đã
+                                            bước lên tầm cao mới, phá hết kỷ lục này đến kỷ lục khác. VN-Index đã có lúc
+                                            chạm mốc lịch sử 1.500 điểm, thanh khoản thị trường tăng kỷ lục lên 44.000
+                                            tỷ/phiên (19/11) với 1,5 tỷ cổ phiếu được giao dịch.</p>
+                                        <p>Những con số biết nói này sẽ không thể có nếu như không có sự vào cuộc kịp thời
+                                            của những &quot;người hùng&quot; như Sovico và FPT. Ngày 15/10, Bộ trưởng Bộ Tài chính
+                                            Hồ Đức Phớc đã trao tặng bằng khen cho Sovico và FPT vì thành tích xuất sắc
+                                            trong việc tham gia xử lý sự cố nghẽn lệnh tại hệ thống giao dịch của HOSE.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="emag-main">
+                        <div class="emag-body">
+                            <div class="emag-body-wrapper">
+                                <img src="images/slide-9.png" alt="" class="slide-bg">
+
+                                <div class="emag-content">
+                                    <div class="slimScroll">
+                                        <p>“VinFast chính là tốc độ đáng kinh ngạc – hiếm có đối với ngành ô tô”, ông
+                                            Michael Lohscheller – Tổng Giám đốc VinFast toàn cầu phát biểu trước hàng
+                                            trăm phóng viên, trên sân khấu của Triển lãm Los Angeles Auto Show ngày
+                                            17/11/2021. “VinFast đã khiến tôi và những đồng nghiệp quốc tế bất ngờ nhiều
+                                            lần, với những chiến lược táo bạo, những nghiên cứu bài bản và sự cương quyết
+                                            để làm ra những chiếc ô tô điện đẳng cấp thế giới. Tôi ấn tượng những những
+                                            thành tựu của VinFast diễn ra chỉ trong 4 năm trên thị trường, và mong đợi tới
+                                            hành trình không giới hạn của VinFast”, ông Loscheller nói thêm.</p>
+                                        <p>Không chỉ vị cựu lãnh đạo của Tập đoàn Volkswagen, báo chí quốc tế cũng
+                                            thực sự bất ngờ với sự xuất hiện của một thương hiệu ô tô điện – một sản phẩm
+                                            được xem là kết tinh những công nghệ cao nhất của ngành công nghiệp ô tô -
+                                            đến từ Việt Nam. Trang Business Insider cho rằng VinFast là “người thách
+                                            thức” Tesla ngay trên sân nhà. Trang này nhắc tới 3 yếu tố cốt lõi làm nên thế
+                                            mạnh của VinFast: sản phẩm chất lượng, giá hợp lý và dịch vụ khách hàng
+                                            trong khi Mike Rutherford của Auto Express, sau khi chứng kiến màn ra mắt
+                                            của VinFast tại Los Angeles Auto Show, nhận định Việt Nam có cơ hội lọt vào
+                                            top 4 trong ngành công nghiệp ô tô châu Á.</p>
+                                        <p>Ra mắt 2 mẫu ô tô điện VF e35 e36 với cam kết bàn giao sản phẩm đến tay
+                                            khách hàng vào cuối năm 2022, hãng ô tô điện đến từ Việt Nam cũng đã công
+                                            bố lộ trình rõ ràng phủ sóng tại các thị trường hàng đầu thế giới gồm Mỹ, Pháp,
+                                            Anh, Hà Lan và Đức trong năm 2022.</p>
+                                        <p>VinFast VF e35 được định vị ở phân khúc SUV cỡ D trong khi e36 là hạng E.
+                                            Cả 2 đều sở hữu động cơ điện kép công suất 402 mã lực, mô men xoắn cực đại
+                                            640 Nm kèm hệ dẫn động 4 bánh. Tầm hoạt động của VF e35 dự kiến ở mức
+                                            460-510 km trong khi e36 là 485-680 km. Các tính năng hỗ trợ người lái cao
+                                            cấp của xe bao gồm hỗ trợ di chuyển khi tắc đường, hỗ trợ lái trên đường cao
+                                            tốc, tự động chuyển làn, hỗ trợ đỗ xe toàn phần (người lái ngồi trong xe), tự đỗ
+                                            xe (người lái giám sát ngoài xe) và triệu tập xe thông minh.</p>
+                                        <p>Màn ra mắt ô tô điện VinFast tại Los Angeles Auto Show được truyền hình trực
+                                            tiếp tại Times Square – nơi được coi là “đại lộ danh vọng” của thế giới.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="emag-main">
+                        <div class="emag-body">
+                            <div class="emag-body-wrapper">
+                                <img src="images/slide-10.png" alt="" class="slide-bg">
+
+                                <div class="emag-content">
+                                    <div class="slimScroll">
+                                        <p>Ngày 28/4/2021, VPBank công bố thương vụ chuyển nhượng 49% vốn cổ phần tại
+                                            FE Credit cho công ty tài chính tiêu dùng lớn nhất Nhật Bản - SMBC CF, công ty
+                                            con do tập đoàn SMBC sở hữu 100%. FE Credit được định giá 2,8 tỷ USD, tương
+                                            đương với việc VPBank nhận về khoảng 1,4 tỷ USD. Đến cuối tháng 10/2021,
+                                            thương vụ này chính thức được hoàn tất.</p>
+                                        <p>Đây được đánh giá là thương vụ “bom tấn”, bởi trước đó, chưa một tổ chức tín
+                                            dụng nào, kể cả một ngân hàng thương mại hàng đầu bán vốn cho nhà đầu tư nước
+                                            ngoài, có thể nhận được khoản tiền lớn đến như vậy.</p>
+                                        <p>FE Credit là công ty tài chính lớn nhất Việt Nam nhưng mức định giá 2,8 tỷ USD
+                                            vẫn khiến nhiều nhà đầu tư ngỡ ngàng. Bởi với định giá này, FE Credit đã vượt
+                                            vốn hoá của hàng loạt ngân hàng thương mại lớn đang niêm yết trên HoSE như
+                                            HDBank, TPBank, SHB, OCB…</p>
+                                        <p>Chủ tịch VPBank Ngô Chí Dũng chia sẻ từng có hai phương án bán vốn FE Credit:
+                                            một là IPO rồi niêm yết, hai là bán cho cổ đông chiến lược. Nếu IPO thì định giá
+                                            của FE Credit thậm chí lên tới 4 tỷ USD. Nhưng cuối cùng, VPBank quyết định
+                                            hợp tác với SMBC để tận dụng nguồn vốn rẻ và kinh nghiệm của họ.</p>
+                                        <p>Thương vụ cũng thể hiện tầm nhìn và tham vọng của SMBC với thị trường tài
+                                            chính của Việt Nam, đặc biệt là mảng tín dụng tiêu dùng. Trước khi đầu tư vào FE
+                                            Credit, SMBC đã nắm giữ 15% cổ phần Eximbank và từng nhiều lần đề xuất với
+                                            Chính phủ và NHNN để mua lại ngân hàng 0 đồng.</p>
+                                        <p>Sau khi bán 49% cho SMBC, Moody’s đã nâng hạng xếp hạng tín nhiệm CFR của
+                                            FE Credit từ B1 lên Ba3. Việc thăng hạng tín nhiệm này sẽ mở ra triển vọng huy
+                                            động vốn rẻ hơn cho FE Credit từ cả trong và ngoài nước, tăng sức cạnh tranh cho
+                                            công ty tài chính tiêu dùng hiện có thị phần lớn nhất Việt Nam</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="emag-main">
+                        <div class="emag-body">
+                            <div class="emag-body-wrapper">
+                                <img src="images/slide-11.png" alt="" class="slide-bg">
+
+                                <div class="emag-content">
+                                    <div class="slimScroll">
+                                        <p>Kể từ giữa năm 2021, thị trường game toàn cầu không thể bỏ qua cái tên Axie
+                                            Infinity, một tựa game được sáng tạo bởi đội ngũ với phần lớn là người Việt Nam.</p>
+                                        <p>Ra mắt năm 2018, phải mất đến 3 năm Axie Infinity mới có thể đạt đến “điểm
+                                            bùng phát” và trở nên phổ biến. Nhà sáng lập Axie Infinity là Sky Mavis, công ty
+                                            có trụ sở tại Singapore nhưng đội ngũ phát triển làm việc tại TP HCM.</p>
+                                        <p>Game Axie Infinity lấy cảm hứng từ Pokémon. Trong game này, người chơi bỏ
+                                            khoảng 1.500 USD mua 3 Axie ban đầu, sau đó phát triển chúng, chiến đấu, thậm
+                                            chí cho giao phối với nhau. Nhưng điều khiến Axie Infinity trở nên khác biệt là
+                                            ngoài việc thực hiện nhiệm vụ để nhận về những ngôi sao, trái tim, đồng xu…,
+                                            người chơi game này có thể nhận được thứ giá trị hơn nhiều: Smooth Love Potion
+                                            (SLP).</p>
+                                        <p>Axie Infinity khiến cho khái niệm “Play to Earn” trở nên phổ biến, tức là chơi
+                                            game và có thể kiếm được tiền. Tại Philippines, một số người chơi cho biết kiếm
+                                            được số tiền từ chơi Axie Infinity còn nhiều hơn thu nhập trung bình hàng tháng.
+                                            Thậm chí có trường hợp người chơi còn mua được nhà.</p>
+                                        <p>Cơn bão Axie Infinity bắt đầu bùng nổ từ tháng 6/2021. Đồng AXS – một trong
+                                            hai token trong game giúp người sở hữu có thể đưa ra những biểu quyết vấn đề
+                                            quan trọng của giao thức tăng giá mạnh, từ mức chỉ hơn 3 USD lên cao nhất 160
+                                            USD vào ngày 7/11/2021. Vốn hoá của đồng AXS tăng lên tương ứng gần 10 tỷ
+                                            USD.</p>
+                                        <p>Câu chuyện của Axie Infinity là nguồn cảm hứng to lớn đối với các studio đi theo
+                                            con đường game NFT – nơi người chơi sở hữu các vật phẩm trong game, có thể
+                                            tương tác và giao dịch mua bán. Nó cũng mở ra cái gọi là Metaverse – được kỳ
+                                            vọng trở thành giai đoạn tiếp theo của Internet; nơi mợi người có thể sống, làm
+                                            việc, vui chơi trong thế giới số.</p>
+                                        <p>Quay trở lại với Sky Mavis, tháng 5/2020, đội ngũ phát triển công ty đã nhận được
+                                            vốn đầu tư từ Mark Cuban (cá mập đầu tư của Mỹ) và Alexis Ohanian (đồng sáng
+                                            lập Reddit). Sau khi trở thành hiện tượng gây sốt toàn cầu và đạt mức vốn hoá
+                                            đồng AXS hàng tỷ USD, Sky Mavis gọi vốn thành công 150 triệu USD vòng
+                                            Series B dẫn đầu bởi Andreessen Horowitz, tương ứng định giá đạt 3 tỷ USD. Với
+                                            mức định giá này, Sky Mavis có thể sẽ được đưa vào danh sách “kỳ lân công nghệ”
+                                            tiếp theo của Đông Nam Á.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
