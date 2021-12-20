@@ -73,6 +73,10 @@
             $(".emag-cover-arrow").click(function() {
                 swiper.slideTo(1, 300)
             })
+
+            $(".swiper-pagination-bullet").click(function() {
+                swiper.slideTo($(this).index(), 300)
+            })
         })
     </script>
 </head>

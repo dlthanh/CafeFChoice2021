@@ -132,6 +132,7 @@
 .swiper-pagination-bullet {
     margin-right: 8px;
     background-color: #dfdfdf;
+    cursor: pointer;
 }
 .swiper-pagination-bullet-active {
     background-color: #1a3267;
